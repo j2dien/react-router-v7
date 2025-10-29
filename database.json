@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Laptop",
       "price": 5000000,
       "pid": "LP0001"
