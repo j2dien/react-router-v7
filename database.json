@@ -1,34 +1,40 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Laptop",
-            "price": 5000000,
-            "pid": "LP0001"
-        },
-        {
-            "id": 2,
-            "name": "Smartphone",
-            "price": 3000000,
-            "pid": "SP0001"
-        },
-        {
-            "id": 3,
-            "name": "Tablet",
-            "price": 2000000,
-            "pid": "TB0001"
-        },
-        {
-            "id": 4,
-            "name": "Smartwatch",
-            "price": 1500000,
-            "pid": "SW0001"
-        },
-        {
-            "id": 5,
-            "name": "Headphones",
-            "price": 800000,
-            "pid": "HP0001"
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 5000000,
+      "pid": "LP0001"
+    },
+    {
+      "id": "2",
+      "name": "Smartphone",
+      "price": 3000000,
+      "pid": "SP0001"
+    },
+    {
+      "id": "3",
+      "name": "Tablet",
+      "price": 2000000,
+      "pid": "TB0001"
+    },
+    {
+      "id": "4",
+      "name": "Smartwatch",
+      "price": 1500000,
+      "pid": "SW0001"
+    },
+    {
+      "id": "5",
+      "name": "Headphones",
+      "price": 800000,
+      "pid": "HP0001"
+    },
+    {
+      "id": "4559",
+      "name": "Powerbank",
+      "price": 200000,
+      "pid": "PB0001"
+    }
+  ]
 }

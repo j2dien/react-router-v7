@@ -1,3 +1,4 @@
+import { data, isRouteErrorResponse } from "react-router";
 import type { Route } from "./+types/products";
 import { z } from "zod";
 
@@ -17,7 +18,14 @@ export async function loader() {
   const products = productSchema.safeParse(result);
 
   if (!products.success) {
-    // do somthing with the error
+    throw data(
+      {
+        message: "Invalid product data",
+      },
+      {
+        status: 500,
+      }
+    );
   }
 
   return {
@@ -28,7 +36,6 @@ export async function loader() {
 
 export default function ProductsPage({ loaderData }: Route.ComponentProps) {
   const { products } = loaderData;
-  console.log(products);
   return (
     <section>
       <h1>Products Page</h1>
@@ -46,4 +53,10 @@ export default function ProductsPage({ loaderData }: Route.ComponentProps) {
       )}
     </section>
   );
+}
+
+export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+  console.log(isRouteErrorResponse(error));
+
+  return <main>Error</main>;
 }
